@@ -1,4 +1,4 @@
-# circleChart
+# circleDonutChart
 ##### with jQuery
 
 #### data-percent(%) & data-chart-size(px) customizable
