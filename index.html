@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.donutChart.js"></script>
   <link type="text/css" rel="stylesheet" href="style.css" />
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.chart1, .chart2').donutChart();
+    $('.chart3').donutChart();
+  });
+  </script>
 </head>
 
 <body>
 
-<div class="circle-chart" data-percent="10" data-chart-size="250">
+<div class="chart1" data-percent="10" data-chart-size="250">
+    <span class="percent"></span>
+    <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+    </div>
+</div>
+
+
+<div class="chart2" data-percent="30" data-chart-size="250">
+    <span class="percent"></span>
+    <div class="slice">
+        <div class="bar"></div>
+        <div class="fill"></div>
+    </div>
+</div>
+
+
+<div class="chart3" data-percent="60" data-chart-size="250">
     <span class="percent"></span>
     <div class="slice">
         <div class="bar"></div>
